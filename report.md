@@ -63,17 +63,29 @@ I used 12 months of Cyclistic’s data starting from October, 2021 to September,
 The dataset contains CSV files of each month, with these 13 columns;
 
 A. ride_id: A unique ID for each ride.
+
 B. rideable_type: The type of bike used in the ride.
+
 C. started_at: Start timestamp of the ride.
+
 D. ended_at: End timestamp of the ride.
+
 E. start_station_name: Name of starting station.
+
 F. start_station_id: Numeric ID of starting station.
+
 G. end_station_name: Name of ending station.
+
 H. end_station_id: Numeric ID of ending station.
+
 I. start_lat: Latitude of starting station.
+
 J. start_lng: Longitude of starting station.
+
 K. end_lat: Latitude of ending station.
+
 L. end_lng: Longitude of ending station.
+
 M. member_casual: Defines whether the customer is a "member" or a "casual".
 
 ## PROCESS PHASE - Documentation of Any Cleaning or Manipulation of Data
@@ -88,8 +100,6 @@ M. member_casual: Defines whether the customer is a "member" or a "casual".
 
 * Then I went ahead to import each of the CSV files into a new database which I created for them in SQL Server. I united all the 12 tables into one single table and began to carry out further cleaning and exploration.
 
-* For a complete outline of my data analysis process using SQL, view the analysis.sql file
-
 Two notes about the Cyclistic data:
 
 1) The dataset contains a total of 5,470,672 rows.
@@ -97,6 +107,10 @@ Two notes about the Cyclistic data:
 4) Finally I have 3,952,294 rows of data left after removing nulls, inconsistent data as well as those trip records that are less than 3 minutes in duration. This is the size of data I will be working with.
 
 ## ANALYZE PHASE - A summary of my analysis
+
+I did my analysis using SQL.
+
+To see the details of my queries, [click here](https://github.com/vaxdata22/cyclistic/blob/main/analysis.sql)
 
 The average trip duration of casual riders (25 mins) is more than double that of members (13 mins). This is possibly because members use the bikes just to get from point A to point B, while casual riders use them for leisure.
 
