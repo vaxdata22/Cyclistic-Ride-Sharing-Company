@@ -114,25 +114,25 @@ To see the details of my queries, [click here](https://github.com/vaxdata22/cycl
 
 The average trip duration of casual riders (25 mins) is more than double that of members (13 mins). This is possibly because members use the bikes just to get from point A to point B, while casual riders use them for leisure.
 
-![average ride length by member and casual](https://github.com/vaxdata22/cyclistic/blob/main/average_ride_length_by_member_casual.png)
+![average ride length by member and casual](https://github.com/vaxdata22/cyclistic/blob/main/charts/average_ride_length_by_member_casual.png)
  
  <br/>
  
 Next let’s look at the hourly usage trends. 
  
-![rides per hour by member and casual](https://github.com/vaxdata22/cyclistic/blob/main/rides_per_hour_by_member_casual.png)
+![rides per hour by member and casual](https://github.com/vaxdata22/cyclistic/blob/main/charts/rides_per_hour_by_member_casual.png)
  
 Here we can see that members’ usage has two peaks, the first around 8 a.m. and the second around 5 p.m. corresponding with the start and end of the workday. Casual riders on the other hand, start using the bikes more beginning from mid-day until evening.
 
 In terms of daily usage, the data shows that members’ usage trend remain fairly consistent minutes difference between the peak on Sunday and the low on Wednesday.
  
-![rides per weekday by member and casual](https://github.com/vaxdata22/cyclistic/blob/main/rides_per_weekday_by_member_casual.png)
+![rides per weekday by member and casual](https://github.com/vaxdata22/cyclistic/blob/main/charts/rides_per_weekday_by_member_casual.png)
  
  <br/>
  
 In this monthly usage chart, we can see that both members and casual riders show a similar trend with more trips made in the warmer months, peaking in July, and less trips during winter, with the least trips in January.
 
-![rides by member casual by month](https://github.com/vaxdata22/cyclistic/blob/main/rides_by_member_casual_by_month.png)
+![rides by member casual by month](https://github.com/vaxdata22/cyclistic/blob/main/charts/rides_by_member_casual_by_month.png)
 
  <br/>
  
