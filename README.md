@@ -1,4 +1,4 @@
-# Cyclistic
+# Cyclistic Data Analytics Case Study
 
 This is a data analytics case study for the Cyclistic Ride Sharing company.
 
