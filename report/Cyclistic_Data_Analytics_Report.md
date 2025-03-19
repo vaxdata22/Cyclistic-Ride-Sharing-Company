@@ -1,4 +1,4 @@
-# Case Study: How Does a Bike-Share Navigate Speedy Success?
+# Cyclistic Data Analytics Case Study: How Does a Bike-Share Navigate Speedy Success?
 
 ## Scenario
 
