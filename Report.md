@@ -54,9 +54,9 @@ To provide the marketing team with insights regarding consumer behavior to help 
 
 ## PREPARE PHASE - A Description of All Data Sources Used
 
-Cyclistic’s historical trip data - https://divvy-tripdata.s3.amazonaws.com/index.html
+Cyclistic’s historical trip data - [here](https://divvy-tripdata.s3.amazonaws.com/index.html)
 
-The data has been made available by Motivate International Inc. under this license - https://www.divvybikes.com/data-license-agreement
+The data has been made available by Motivate International Inc. under this license - [here](https://www.divvybikes.com/data-license-agreement)
 
 I used 12 months of Cyclistic’s data starting from October, 2021 to September, 2022.
 
@@ -90,13 +90,13 @@ M. member_casual: Defines whether the customer is a "member" or a "casual".
 
 ## PROCESS PHASE - Documentation of Any Cleaning or Manipulation of Data
 
-* I opened each CSV spreadsheet and created a column called “ride_length.” I calculated the length of each ride in minutes by subtracting the column “started_at” from the column “ended_at” using the “=MOD(RIGHT(D2, 8)-RIGHT(C2, 8), 1)\*1440” command in each file. The MOD function is necessary to take care of negative results in the subtraction.
+* I opened each CSV spreadsheet and created a column called “ride_length.” I calculated the length of each ride in minutes by subtracting the column “started_at” from the column “ended_at” using the `=MOD(RIGHT(D2, 8)-RIGHT(C2, 8), 1)\*1440` command in each file. The `MOD` function is necessary to take care of negative results in the subtraction.
 
-* Next, I created a column called “day_of_week,” and calculated the day of the week that each ride started using the “=WEEKDAY(LEFT(C2, 10))” command in each file. I formatted as “Custom dddd” in order to display the day of the week as text rather than number.
+* Next, I created a column called “day_of_week,” and calculated the day of the week that each ride started using the `=WEEKDAY(LEFT(C2, 10))` command in each file. I formatted as “Custom dddd” in order to display the day of the week as text rather than number.
 
-* Again, I created a new column called “ride_hour”, and obtained the hour each ride started using the “=MID(C2, 12, 2)” command in each file.
+* Again, I created a new column called “ride_hour”, and obtained the hour each ride started using the `=MID(C2, 12, 2)` command in each file.
 
-* Finally, I created a new column called “month_of_year”, and obtained the month for each ride using the “=LEFT(C2, 7)” command in each file.
+* Finally, I created a new column called “month_of_year”, and obtained the month for each ride using the `=LEFT(C2, 7)` command in each file.
 
 * Then I went ahead to import each of the CSV files into a new database which I created for them in SQL Server. I united all the 12 tables into one single table and began to carry out further cleaning and exploration.
 
@@ -110,36 +110,35 @@ Two notes about the Cyclistic data:
 
 I did my analysis using SQL.
 
-To see the details of my queries, [click here](https://github.com/vaxdata22/cyclistic/blob/main/analysis.sql)
+To see the details of my queries, [click here](code/analysis.sql)
 
 The average trip duration of casual riders (25 mins) is more than double that of members (13 mins). This is possibly because members use the bikes just to get from point A to point B, while casual riders use them for leisure.
 
-![average ride length by member and casual](https://github.com/vaxdata22/cyclistic/blob/main/charts/average_ride_length_by_member_casual.png)
+![average ride length by member and casual](charts/average_ride_length_by_member_casual.png)
  
  <br/>
  
 Next let’s look at the hourly usage trends. 
  
-![rides per hour by member and casual](https://github.com/vaxdata22/cyclistic/blob/main/charts/rides_per_hour_by_member_casual.png)
+![rides per hour by member and casual](charts/rides_per_hour_by_member_casual.png)
  
 Here we can see that members’ usage has two peaks, the first around 8 a.m. and the second around 5 p.m. corresponding with the start and end of the workday. Casual riders on the other hand, start using the bikes more beginning from mid-day until evening.
 
 In terms of daily usage, the data shows that members’ usage trend remain fairly consistent minutes difference between the peak on Sunday and the low on Wednesday.
  
-![rides per weekday by member and casual](https://github.com/vaxdata22/cyclistic/blob/main/charts/rides_per_weekday_by_member_casual.png)
+![rides per weekday by member and casual](charts/rides_per_weekday_by_member_casual.png)
  
  <br/>
  
 In this monthly usage chart, we can see that both members and casual riders show a similar trend with more trips made in the warmer months, peaking in July, and less trips during winter, with the least trips in January.
 
-![rides by member casual by month](https://github.com/vaxdata22/cyclistic/blob/main/charts/rides_by_member_casual_by_month.png)
+![rides by member casual by month](charts/rides_by_member_casual_by_month.png)
 
  <br/>
  
 ## SHARE PHASE - Supporting visualizations and key findings
 
-The full dashboard and visualization sheets are available at:
-https://public.tableau.com/app/profile/donatus.enebuse
+The full dashboard and visualization sheets are available [here]{https://public.tableau.com/app/profile/donatus.enebuse).
 
 ## ACT PHASE - My top three recommendations based on my analysis
 
